@@ -1,0 +1,91 @@
+[
+    {
+      "id": 1,
+      "coverImg": "https://i.ibb.co/PgTjqhQ/Rectangle-2.png",
+      "title": "Introduction to C",
+      "paragraph1": "The readable content of a page when looking at its layout.",
+      "price":9000,
+      "Credit": 5
+    },
+    {
+      "id": 2,
+      "coverImg": "https://i.ibb.co/WDpnVNv/Rectangle-2-1.png",
+      "title": "Introduction to Algorithms",
+      "paragraph1": "The readable content of a page when looking at its layout.",
+      "price": 12000,
+      "Credit": 8
+      
+    },
+    {
+      "id": 3,
+      "coverImg": "https://i.ibb.co/grtRMw1/Rectangle-2-2.png",
+      "title": "Introduction to C++ for DSA",
+      "paragraph1": "The readable content of a page when looking at its layout.",
+      "price": 14000,
+      "Credit": 5
+    },
+    {
+      "id": 4,
+      "coverImg": "https://i.ibb.co/gd6M4wt/Rectangle-2-3.png",
+      "title": "Basic Data Structures",
+      "paragraph1": "The readable content of a page when looking at its layout.",
+      "price": 16000,
+      "Credit": 7
+    },
+    {
+      "id": 5,
+      "coverImg": "https://i.ibb.co/SxsVtBX/Rectangle-2-4.png",
+      "title": "Introduction to OOP Python",
+      "paragraph1": "The readable content of a page when looking at its layout.",
+      "price": 17000,
+      "Credit": 10
+    },
+    {
+      "id": 6,
+      "coverImg": "https://i.ibb.co/Pc7Vr1g/Rectangle-2-5.png",
+      "title": "Software Engineering",
+      "paragraph1": "The readable content of a page when looking at its layout.",
+      "price": 19000,
+      "Credit": 5
+    },
+    {
+      "id": 7,
+      "coverImg": "https://i.ibb.co/zQTR1k7/Rectangle-2-6.png",
+      "title": "AWS, Cloud Computing",
+      "paragraph1": "The readable content of a page when looking at its layout.",
+      "Credit": 5
+    },
+    {
+      "id": 8,
+      "coverImg": "https://i.ibb.co/3TpjL7Y/Rectangle-3.png",
+      "title": "Database (MySQL)",
+      "paragraph1": "The readable content of a page when looking at its layout.",
+      "price": 20000,
+      "Credit": 8
+    },
+    {
+      "id": 9,
+      "coverImg": "https://i.ibb.co/ZdZx55F/Rectangle-3-1.png",
+      "title": "Problem-Solving Part",
+      "paragraph1": "The readable content of a page when looking at its layout.",
+      "price": 11000,
+      "Credit": 8
+    }
+  ]
+ 
+  
+ 
+
+  
+  
+
+
+ 
+
+
+
+
+
+
+
+  
