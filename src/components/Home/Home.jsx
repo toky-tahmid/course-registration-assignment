@@ -3,6 +3,8 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import Cart from "../cart/cart";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
   const [cards, setCards] = useState([]);
   const [selectedCards, setSelectedCards] = useState([]);
@@ -22,14 +24,15 @@ const handleSelectCard = (card)=> {
         total += item.price;
     })
 if(isExist) {
-    alert("Please")}
+    toast.success("Already added! Please select another course");
+}
 else{
     selectedCards.forEach((item) => {
         count += item.Credit;
     })
 const totalRemaining = 20 - count
 if(count > 20){
-    alert("help")
+    toast.success("out of credits");
 }
 else{
     setTotal(total)
@@ -74,6 +77,7 @@ else{
         </div>
         <div className="cart mt-3">
           <Cart selectedCards={selectedCards} remaining={remaining} totalCost={totalCost} total={total} ></Cart>
+          <ToastContainer />
         </div>
       </div>
     </>

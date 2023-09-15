@@ -24,7 +24,7 @@ const Cart = ({ selectedCards,remaining,totalCost,total }) => {
       </div>
       <hr />
       <div>
-        <h4 className="font-semibold">Total Price: {total}</h4>
+        <h4 className="font-semibold">Total Price: {total} USD</h4>
       </div>
     </div>
     </>
