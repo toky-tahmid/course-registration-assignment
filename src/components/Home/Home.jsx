@@ -2,13 +2,37 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect } from "react";
 import { useState } from "react";
+import Cart from "../cart/cart";
 const Home = () => {
   const [cards, setCards] = useState([]);
+  const [selectedCards, setSelectedCards] = useState([]);
+  const [remaining,setRemaining] = useState(0);
+  const [totalCost,setTotalCost] = useState(0);
   useEffect(() => {
     fetch("./data.json")
       .then((response) => response.json())
       .then((data) => setCards(data));
   }, []);
+
+
+const handleSelectCard = (card)=> {
+    const isExist = selectedCards.find((item) => item.id === card.id)
+    let count = card.Credit;
+if(isExist) {
+    alert("Please")}
+else{
+    selectedCards.forEach((item) => {
+        count += item.Credit;
+    })
+const totalRemaining = 20 - count
+if(count > 20){
+    alert("help")
+}
+else{
+    setTotalCost(count)
+    setRemaining(totalRemaining)
+        setSelectedCards([...selectedCards, card]);
+}}}
   return (
     <>
       <div>
@@ -32,11 +56,11 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="info flex justify-between">
-                  <p className="font-bold">$ price:{card.price}</p>
-                  <p className="font-bold">credit:{card.Credit}</p>
+                  <p className="font-bold"> $Price:{card.price}</p>
+                  <p className="font-bold">Credit:{card.Credit}</p>
                 </div>
                 <div>
-                  <button className="btn btn-info text-white  w-auto ml-20 mt-3">
+                  <button onClick={()=> handleSelectCard(card)}  className="btn btn-warning text-white w-40 ml-8 mt-3">
                     Select
                   </button>
                 </div>
@@ -48,7 +72,7 @@ const Home = () => {
         
         </div>
         <div className="cart ">
-          <h3> this cart</h3>
+          <Cart selectedCards={selectedCards} remaining={remaining} totalCost={totalCost} ></Cart>
         </div>
       </div>
     </>
