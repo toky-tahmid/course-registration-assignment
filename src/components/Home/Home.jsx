@@ -5,10 +5,11 @@ import { useState } from "react";
 import Cart from "../cart/cart";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaBookmark } from 'react-icons/fa';
 const Home = () => {
   const [cards, setCards] = useState([]);
   const [selectedCards, setSelectedCards] = useState([]);
-  const [remaining,setRemaining] = useState(0);
+  const [remaining,setRemaining] = useState(20);
   const [totalCost,setTotalCost] = useState(0);
   const [total,setTotal] = useState(0);
   useEffect(() => {
@@ -24,7 +25,7 @@ const handleSelectCard = (card)=> {
         total += item.price;
     })
 if(isExist) {
-    toast.success("Already added! Please select another course");
+    toast.success("Already added! Please select another course!");
 }
 else{
     selectedCards.forEach((item) => {
@@ -38,7 +39,7 @@ else{
     setTotal(total)
     setTotalCost(count)
     setRemaining(totalRemaining)
-        setSelectedCards([...selectedCards, card]);
+    setSelectedCards([...selectedCards, card]);
 }}}
   return (
     <>
@@ -47,9 +48,9 @@ else{
           Course Registration
         </h1>
       </div>
-      <div className="container flex justify-evenly">
+      <div className="container flex justify-evenly flex-col md:flex-col lg:flex-row ml-14 md:ml-4 lg:ml-auto">
         <div className="home-container">
-            <div className="card-container ml-10 mt-4 grid grid-cols-3 gap-6">
+            <div className="card-container ml-10 mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
            {
             cards.map(card => (
                 <div key={card.id} className="card w-60 h-72 border">
@@ -64,6 +65,7 @@ else{
                 </div>
                 <div className="info flex justify-between">
                   <p className="font-bold ml-3"> $Price:{card.price}</p>
+                  <span className="mt-1  text-xl text-blue-400 ml-8"><FaBookmark></FaBookmark></span>
                   <p className="font-bold mr-3">Credit:{card.Credit}</p>
                 </div>
                 <div>
