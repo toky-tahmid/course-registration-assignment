@@ -20,7 +20,7 @@
       "id": 3,
       "coverImg": "https://i.ibb.co/grtRMw1/Rectangle-2-2.png",
       "title": "Introduction to C++ for DSA",
-      "paragraph1": "Elevate your skills with C++.",
+      "paragraph1": "Master C++ for data structures and algorithms.",
       "price": 14000,
       "Credit": 5
     },
@@ -28,7 +28,7 @@
       "id": 4,
       "coverImg": "https://i.ibb.co/gd6M4wt/Rectangle-2-3.png",
       "title": "Basic Data Structures",
-      "paragraph1": " Conquer the cloud with C++.",
+      "paragraph1": " Learn essential data structures for coding .",
       "price": 16000,
       "Credit": 7
     },
@@ -44,7 +44,7 @@
       "id": 6,
       "coverImg": "https://i.ibb.co/Pc7Vr1g/Rectangle-2-5.png",
       "title": "Software Engineering",
-      "paragraph1": "Discover elegance in Python",
+      "paragraph1": "Learn the principles of software engineering.",
       "price": 19000,
       "Credit": 5
     },
@@ -59,7 +59,7 @@
       "id": 8,
       "coverImg": "https://i.ibb.co/3TpjL7Y/Rectangle-3.png",
       "title": "Database (MySQL)",
-      "paragraph1": "Organize data with precision.",
+      "paragraph1": "Organize data and Master MySQL database management.",
       "price": 20000,
       "Credit": 8
     },
