@@ -59,7 +59,7 @@ else{
                 </div>
                 <div>
                   <h3 className="font-bold">{card.title}</h3>
-                  <p className="">
+                  <p>
                     {card.paragraph1}
                   </p>
                 </div>
